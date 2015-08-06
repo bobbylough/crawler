@@ -145,7 +145,7 @@ public class CrawlHelperTest {
 		StringBuffer result = helper.getPageContents(bufferedInput);
 		assertEquals(50176, result.length());
 		String filteredResult = result.toString().replace("v", "");
-		assertEquals(296, filteredResult.length());
+		assertEquals(148, filteredResult.length());
 		filteredResult = filteredResult.replace("\r\n", "");
 		assertEquals(0, filteredResult.length());
 	}
